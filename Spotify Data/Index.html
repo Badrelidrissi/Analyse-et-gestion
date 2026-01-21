@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Caractéristiques musicales sur Spotify</title>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <h1>Caractéristiques musicales sur Spotify</h1>
+      <p class="subtitle">Exploration interactive des données audio Spotify</p>
+    </header>
+
+    <!-- CONTROLS -->
+    <div class="controls">
+      <label>Genre :</label>
+      <select id="genre">
+        <option value="all">Tous</option>
+      </select>
+    </div>
+
+    <!-- CHART -->
+    <div class="chart-container">
+      <svg width="900" height="450"></svg>
+    </div>
+
+    <p class="legend">
+      Chaque point représente un titre Spotify.
+      Axe X : énergie · Axe Y : danceability · Taille : popularité
+    </p>
+
+    <footer>
+      Projet réalisé avec D3.js – Atelier Visualisation, Interface, Interactivité
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
